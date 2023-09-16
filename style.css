@@ -1,0 +1,134 @@
+/* @import url('/node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css'); */
+
+:root{
+  --main-color: white;
+  --secondary-color: rgba(255,50,105);
+
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   align-items: center;
+ }
+ .topBar{
+     width: 90vw;
+     min-height: 50px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+ }
+ 
+ .topBar button{
+   outline: none;
+   width: 80px;
+   height: 25px;
+   border-radius: 10px;
+   background-color: red;
+   color: white;
+   border: 1px solid white;
+   
+ }
+ button:hover{
+   cursor: pointer;
+   scale: 1.2;
+   
+ }
+ .topBar input{
+     outline: none;
+     width: 200px;
+     height: 25px;
+ 
+ }
+ .container{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ table{
+     width: 90vw;
+     min-height: auto;
+    border: 1px solid; 
+ }
+ thead {
+  position: sticky;
+  top: 50px;
+ }
+ thead th{
+     border-bottom: 1px solid gray;
+     height: 30px;
+     text-align: center;
+     background-color: rgb(151, 150, 150);
+ }
+ thead th:hover{
+   background-color: rgb(206, 192, 192);
+   cursor: pointer;
+ }
+ tbody td{
+     
+     height: 30px;
+     text-align: center;
+     
+   
+ }
+ tbody td:hover{
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ }
+ 
+ tr:nth-child(even){
+     background-color: rgb(222, 219, 219);
+ 
+ }
+ 
+ tr input{
+   width: 80%;
+ }
+ .pagination{
+     min-width: 200px;
+     height: 60px;
+     padding: 0px;
+     width: 800px;
+    
+ }
+ .pagination ul{
+     display: flex;
+     height: 30px;
+     position: absolute;
+     right: 270px;
+   
+ 
+ }
+ .pagination ul li,
+.pagination button {
+     list-style: none;
+     min-width: 30px;
+     border: 0.4px solid lightgrey;
+     height: 100%;
+     text-align: center;
+     padding-top: 5px;
+     box-sizing: border-box;
+     display: inline-block;
+     margin: 5px;
+     cursor: pointer;
+     border-radius: 50%;
+ }
+
+ .pagination ul li:hover,
+ .pagination button:hover {
+     background-color: rgb(206, 192, 192);
+ }
+
+ .pagination ul button {
+     padding: 5px 10px;
+ }
+ 
+ .pagination ul .active{
+  background-color: blue;
+ }
