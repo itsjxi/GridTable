@@ -4,32 +4,41 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <title>Grid Table</title>
+    <title>Modern Grid Table</title>
+    <link rel="stylesheet" href="modern-grid.css">
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        margin: 0;
+        padding: 24px;
+        background: #f8fafc;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 32px;
+        padding: 32px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 12px;
+      }
+      .header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-      <div class="topBar header">
-          <label for="Records Per Page">Records Per Page
-          <select name="Records Per Page" id="record_size" style="max-width: 80px; height: 30px;">
-              <option value="5">5</option>
-              <option value="10">10</option>
-              <option value="20">20</option>
-              <option value="25">25</option>
-              <option value="30">30</option>
-              <option value="35">35</option>
-              <option value="40">40</option>
-          </select>
-      </label>
-          <label for="search">Search:
-              <input type="text" placeholder="Search">
-          </label>
-        <button class= 'AddDetails'>Add</button>
+      <div class="header">
+        <h1>Modern Grid Table</h1>
       </div>
-      
+      <div id="grid-container"></div>
     </div>
-<div class="pagination"></div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
